@@ -31,7 +31,7 @@ const onlineUsers = new Map(); // { userId: socketId }
 // socket.io
 
 io.on("connection", (socket) => {
-  // console.log("Socket connected:", socket.id);
+  console.log("Socket connected:", socket.id);
 
   // jab user login/online aata hai
   socket.on("user_online", (userId) => {
